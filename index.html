@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senctaria Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Senctaria Studio</div>
+            <ul class="nav-menu">
+                <li class="nav-item active" onclick="showPage(1)">Home</li>
+                <li class="nav-item" onclick="showPage(2)">Teams</li>
+                <li class="nav-item" onclick="showPage(3)">Project</li>
+                <li class="nav-item"><a href="https://discord.gg/zhcbBCGtu9">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Page 1: Company Introduction -->
+    <div class="page active" id="page1">
+        <div class="container">
+            <div class="hero-section">
+                <img class="Company-logo" src="pic/sc.png" width="350" height="350" alt="logo">
+                <h1 class="hero-title">Senctaria</h1>
+                <p class="hero-subtitle">
+                    เราคือทีมงานที่ก่อตั้งขึ้นเพื่อสร้างสรรค์ผลงานมายคราฟ Roleplay ในรูปแบบต่างๆ<br>
+                    โดยเน้นไปที่การสวมบทบาทแนวองกรณ์การเรียนการสอนและการใช้ชีวิต
+                </p>
+                
+                <div class="announcement-board">
+                    <h3 class="announcement-title">📢Announcement</h3>
+                    <p>เหลือเวลาอีกไม่นานแล้วสำหรับ SenctariaMagic เรื่องราวของโรงเรียนสอนเวทย์มนต์ ที่ถูกก่อตั้งโดยคนประหลาดๆ แต่กับต้องมาเจอเรื่องราวของเวทย์มนต์ดำที่เข้ามามีบทบาทสำคัญกับเนื้อเรื่อง
+                    เป็นระยะเวลา 2 เดือนที่ดำเนินสตอรี่มีให้เสพทุกอารมย์ไม่ว่าจะเศร้า ร้องได้ ดีใจ หรือเสียใจรวมไปถึงสตอรี่ช่วงไขปริศนา หลอนๆ สุดท้ายงานเลี้ยงยอมมีการเลิกลา โปรเจคหน้าถูกสปอยออกมาแล้ว
+                    กับโปรเจค Dekwenn หรือเด็กเวร นั้นเองแนวทางของโปรเจคถัดไปจะเป็นอย่างไรพวกคุณก็คงต้องติดตามต่อไป..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 2: Team -->
+    <div class="page" id="page2">
+        <div class="container">
+            <h2 class="hero-title" style="text-align: center; margin-bottom: 2rem;">Teams</h2>
+            <div class="team-grid">
+                <div class="team-member" onclick="openModal('member1')">
+                    <div class="member-photo">
+                        <img src="pic/Copyrightxb.png" alt="pho">
+                    </div>
+                    <h3 class="member-name">Copyrightxb [Dev] </h3>
+                    <p class="member-role">Head</p>
+                    <p class="member-bio">เป็นทุกอย่างให้เธอแล้ว ทำหมดไม่ว่าจะหลังบ้านหน้าบ้าน ทำแมพเพราะเรามันดีดเกิ้นใคร</p>
+                </div>
+                
+                <div class="team-member" onclick="openModal('member2')">
+                    <div class="member-photo">B</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                </div>
+                
+                <div class="team-member" onclick="openModal('member3')">
+                    <div class="member-photo">C</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                </div>
+                
+                                
+                <div class="team-member" onclick="openModal('member4')">
+                    <div class="member-photo">D</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                </div>
+             
+                                
+                <div class="team-member" onclick="openModal('member5')">
+                    <div class="member-photo">E</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                </div>
+             
+                <div class="team-member" onclick="openModal('member6')">
+                    <div class="member-photo">F</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>z    
+                    <p class="member-bio">Lore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 3: Projects -->
+    <div class="page" id="page3">
+        <div class="container">
+            <h2 class="hero-title" style="text-align: center; margin-bottom: 2rem;">Project</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal('project1')">
+                    <div class="project-logo">
+                        <img src="pic/Screenshot 2025-05-26 214051.png" >
+                    </div>
+                    <h3 class="project-name">UniverscenterSS1</h3>
+                    <p class="project-description">การผจญภัยในโลกยุคกลาง</p>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project2')">
+                    <div class="project-logo">
+                        <img src="pic/UniverscenterSS2.png" width="100" height="100">
+                    </div>
+                    <h3 class="project-name">UniverscenterSS2</h3>
+                    <p class="project-description">การผจญภัยในโลกยุคกลาง</p>
+                </div>
+
+                <div class="project-card" onclick="openModal('project3')">
+                    <div class="project-logo">
+                        <img src="pic/The_Riddlers_Domain.png" width="100" height="100" alt="">
+                    </div>
+                    <h3 class="project-name">The Ridder Domin</h3>
+                    <p class="project-description">การสืบคดีและไขปริศนาในคฤหาสน์ผีสิง
+                    </p>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project4')">
+                    <div class="project-logo">
+                        <img src="pic/Sanctaria_Magic_2.png" width="100" height="100" alt="">
+                    </div>
+                    <h3 class="project-name">SenctariaSS1</h3>
+                    <p class="project-description">สถาบันการอบรมและการฝึกฝนผู้วิเศษ</p>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project5')">
+                    <div class="project-logo">
+                        <img src="pic/Dekwenn - Copy.png" width="100" height="100">
+                    </div>
+                    <h3 class="project-name">SenctariaSS2</h3>
+                    <p class="project-description">ComingSoon..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 4: Contact -->
+    <div class="page" id="page4">
+        <div class="container">
+            <div class="contact-container">
+                <h2 class="contact-title">ติดต่อเรา</h2>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-img">
+                        <img src="pic/logo2.png" width="50" height="50" alt="">
+                    </div>
+                    <div>
+                        <h3 style="margin: 0;">Senctaria Studio</h3>
+                        <p style="margin: 0; font-size: 0.9rem;">Creative Minecraft Roleplay</p>
+                    </div>
+                </div>
+                <p>เราคือทีมงานที่ก่อตั้งขึ้นเพื่อสร้างสรรค์ผลงานมายคราฟโรลเพย์ในรูปแบบต่างๆ โดยเน้นไปที่การสวมบทบาทแนวองกรณ์การเรียนการสอนและการใช้ชีวิต</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#" onclick="showPage(1)">Home</a></li>
+                    <li><a href="#" onclick="showPage(2)">Teams</a></li>
+                    <li><a href="#" onclick="showPage(3)">Project</a></li>
+                    <li><a href="#" onclick="showPage(4)">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Project</h3>
+                <ul>
+                    <li><a href="#" onclick="openModal('project1')">Universcenter SS1</a></li>
+                    <li><a href="#" onclick="openModal('project2')">Universcenter SS2</a></li>
+                    <li><a href="#" onclick="openModal('project3')">The Ridder Domin</a></li>
+                    <li><a href="#" onclick="openModal('project4')">SenctariaMagic SS1</a></li>
+                    <li><a href="#" onclick="openModal('project5')">Dekwenn SS2</a></li>
+                    <li><a href="#">Coming Soon...</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>ช่องทางการติดตาม</h3>
+                <li><a href="https://discord.gg/zhcbBCGtu9">Discord</a></li>
+                <li><a href="https://youtube.com/@senctaria_official?si=NYxmiZwYvArtDHKb">YouTube</a></i>
+</body>
+</html>
