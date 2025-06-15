@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senctaria Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Senctaria Studio</div>
+            <ul class="nav-menu">
+                <li class="nav-item active" onclick="showPage(1)">Home</li>
+                <li class="nav-item" onclick="showPage(2)">Teams</li>
+                <li class="nav-item" onclick="showPage(3)">Project</li>
+                <li class="nav-item"><a href="https://discord.gg/zhcbBCGtu9">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Page 1: Company Introduction -->
+    <div class="page active" id="page1">
+        <div class="container">
+            <div class="hero-section">
+                <img class="Company-logo" src="pic/sc.png" width="350" height="350" alt="logo">
+                <h1 class="hero-title">Senctaria</h1>
+                <p class="hero-subtitle">
+                    เราคือทีมงานที่ก่อตั้งขึ้นเพื่อสร้างสรรค์ผลงานมายคราฟ Roleplay ในรูปแบบต่างๆ<br>
+                    โดยเน้นไปที่การสวมบทบาทแนวองกรณ์การเรียนการสอนและการใช้ชีวิต
+                </p>
+                
+                <div class="announcement-board">
+                    <h3 class="announcement-title">📢Announcement</h3>
+                    <p>เหลือเวลาอีกไม่นานแล้วสำหรับ SenctariaMagic เรื่องราวของโรงเรียนสอนเวทย์มนต์ ที่ถูกก่อตั้งโดยคนประหลาดๆ แต่กับต้องมาเจอเรื่องราวของเวทย์มนต์ดำที่เข้ามามีบทบาทสำคัญกับเนื้อเรื่อง
+                    เป็นระยะเวลา 2 เดือนที่ดำเนินสตอรี่มีให้เสพทุกอารมย์ไม่ว่าจะเศร้า ร้องได้ ดีใจ หรือเสียใจรวมไปถึงสตอรี่ช่วงไขปริศนา หลอนๆ สุดท้ายงานเลี้ยงยอมมีการเลิกลา โปรเจคหน้าถูกสปอยออกมาแล้ว
+                    กับโปรเจค Dekwenn หรือเด็กเวร นั้นเองแนวทางของโปรเจคถัดไปจะเป็นอย่างไรพวกคุณก็คงต้องติดตามต่อไป..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 2: Team -->
+    <div class="page" id="page2">
+        <div class="container">
+            <h2 class="hero-title" style="text-align: center; margin-bottom: 2rem;">Teams</h2>
+            <div class="team-grid">
+                <div class="team-member" onclick="openModal('member1')">
+                    <div class="member-photo">
+                        <img src="pic/Copyright.png" alt="pho">
+                    </div>
+                    <h3 class="member-name">Copyrightxb [Dev] </h3>
+                    <p class="member-role">Head</p>
+                    <p class="member-bio">เป็นทุกอย่างให้เธอแล้ว ทำหมดไม่ว่าจะหลังบ้านหน้าบ้าน ทำแมพเพราะเรามันดีดเกิ้นใคร</p>
+                    <div class="social-section">
+                        <div class="social-icons">
+                            <!-- TikTok Icon -->
+                            <a href="https://www.tiktok.com/@copyrightxb3?is_from_webapp=1&sender_device=pc" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- YouTube Icon -->
+                            <a href="https://youtube.com/@copyrightxb?si=bWfXalC999D8E76Y" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" onclick="openModal('member2')">
+                    <div class="member-photo">B</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                    <div class="social-section">
+                        <div class="social-icons">
+                            <!-- TikTok Icon -->
+                            <a href="https://www.tiktok.com/@copyrightxb3?is_from_webapp=1&sender_device=pc" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- YouTube Icon -->
+                            <a href="https://youtube.com/@copyrightxb?si=bWfXalC999D8E76Y" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" onclick="openModal('member3')">
+                    <div class="member-photo">C</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                    <div class="social-section">
+                        <div class="social-icons">
+                            <!-- TikTok Icon -->
+                            <a href="https://www.tiktok.com/@copyrightxb3?is_from_webapp=1&sender_device=pc" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- YouTube Icon -->
+                            <a href="https://youtube.com/@copyrightxb?si=bWfXalC999D8E76Y" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                                
+                <div class="team-member" onclick="openModal('member4')">
+                    <div class="member-photo">D</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                    <div class="social-section">
+                        <div class="social-icons">
+                            <!-- TikTok Icon -->
+                            <a href="https://www.tiktok.com/@copyrightxb3?is_from_webapp=1&sender_device=pc" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- YouTube Icon -->
+                            <a href="https://youtube.com/@copyrightxb?si=bWfXalC999D8E76Y" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+             
+                                
+                <div class="team-member" onclick="openModal('member5')">
+                    <div class="member-photo">E</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>
+                    <p class="member-bio">Lore</p>
+                    <div class="social-section">
+                        <div class="social-icons">
+                            <!-- TikTok Icon -->
+                            <a href="https://www.tiktok.com/@copyrightxb3?is_from_webapp=1&sender_device=pc" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- YouTube Icon -->
+                            <a href="https://youtube.com/@copyrightxb?si=bWfXalC999D8E76Y" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="team-member" onclick="openModal('member6')">
+                    <div class="member-photo">F</div>
+                    <h3 class="member-name">Name</h3>
+                    <p class="member-role">Staff</p>z    
+                    <p class="member-bio">Lore</p>
+                    <div class="social-section">
+                        <div class="social-icons">
+                            <!-- TikTok Icon -->
+                            <a href="https://www.tiktok.com/@copyrightxb3?is_from_webapp=1&sender_device=pc" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M412.19 118.66a109.27 109.27 0 0 1-9.45-5.5 132.87 132.87 0 0 1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 0 1-35.22 55.56 68.8 68.8 0 0 1-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0 1 21.41 3.39l.1-83.94a153.14 153.14 0 0 0-118 34.52 161.79 161.79 0 0 0-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 0 0 115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0 0 27.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- YouTube Icon -->
+                            <a href="https://youtube.com/@copyrightxb?si=bWfXalC999D8E76Y" target="_blank" class="icon-container">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 3: Projects -->
+    <div class="page" id="page3">
+        <div class="container">
+            <h2 class="hero-title" style="text-align: center; margin-bottom: 2rem;">Project</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal('project1')">
+                    <div class="project-logo">
+                        <img src="pic/Screenshot 2025-05-26 214051.png" >
+                    </div>
+                    <h3 class="project-name">UniverscenterSS1</h3>
+                    <p class="project-description">การผจญภัยในโลกยุคกลาง</p>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project2')">
+                    <div class="project-logo">
+                        <img src="pic/UniverscenterSS2.png" width="100" height="100">
+                    </div>
+                    <h3 class="project-name">UniverscenterSS2</h3>
+                    <p class="project-description">การผจญภัยในโลกยุคกลาง</p>
+                </div>
+
+                <div class="project-card" onclick="openModal('project3')">
+                    <div class="project-logo">
+                        <img src="pic/The_Riddlers_Domain.png" width="100" height="100" alt="">
+                    </div>
+                    <h3 class="project-name">The Ridder Domin</h3>
+                    <p class="project-description">การสืบคดีและไขปริศนาในคฤหาสน์ผีสิง
+                    </p>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project4')">
+                    <div class="project-logo">
+                        <img src="pic/Sanctaria_Magic_2.png" width="100" height="100" alt="">
+                    </div>
+                    <h3 class="project-name">SenctariaSS1</h3>
+                    <p class="project-description">สถาบันการอบรมและการฝึกฝนผู้วิเศษ</p>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project5')">
+                    <div class="project-logo">
+                        <img src="pic/Dekwenn - Copy.png" width="100" height="100">
+                    </div>
+                    <h3 class="project-name">SenctariaSS2</h3>
+                    <p class="project-description">ComingSoon..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page 4: Contact -->
+    <div class="page" id="page4">
+        <div class="container">
+            <div class="contact-container">
+                <h2 class="contact-title">ติดต่อเรา</h2>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-img">
+                        <img src="pic/logo2.png" width="50" height="50" alt="">
+                    </div>
+                    <div>
+                        <h3 style="margin: 0;">Senctaria Studio</h3>
+                        <p style="margin: 0; font-size: 0.9rem;">Creative Minecraft Roleplay</p>
+                    </div>
+                </div>
+                <p>เราคือทีมงานที่ก่อตั้งขึ้นเพื่อสร้างสรรค์ผลงานมายคราฟโรลเพย์ในรูปแบบต่างๆ โดยเน้นไปที่การสวมบทบาทแนวองกรณ์การเรียนการสอนและการใช้ชีวิต</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#" onclick="showPage(1)">Home</a></li>
+                    <li><a href="#" onclick="showPage(2)">Teams</a></li>
+                    <li><a href="#" onclick="showPage(3)">Project</a></li>
+                    <li><a href="#" onclick="showPage(4)">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Project</h3>
+                <ul>
+                    <li><a href="#" onclick="openModal('project1')">Universcenter SS1</a></li>
+                    <li><a href="#" onclick="openModal('project2')">Universcenter SS2</a></li>
+                    <li><a href="#" onclick="openModal('project3')">The Ridder Domin</a></li>
+                    <li><a href="#" onclick="openModal('project4')">SenctariaMagic SS1</a></li>
+                    <li><a href="#" onclick="openModal('project5')">Dekwenn SS2</a></li>
+                    <li><a href="#">Coming Soon...</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>ช่องทางการติดตาม</h3>
+                <li><a href="https://discord.gg/zhcbBCGtu9">Discord</a></li>
+                <li><a href="https://youtube.com/@senctaria_official?si=NYxmiZwYvArtDHKb">YouTube</a></i>
+</body>
+</html>
